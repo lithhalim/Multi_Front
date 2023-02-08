@@ -1,0 +1,27 @@
+.container-pagination-section-grid-style{
+    display: flex; justify-content: end;
+    border: 1px solid rgba(192, 192, 192, 0.685); height: 50px; padding: 0px 10px;
+    font-weight: .9em;
+    .number-rows{
+        display: flex; align-items: center;
+        span{
+            font-weight: bold; 
+        }
+        p{
+            padding: 0px 5px;
+        }
+    }
+    .container-next-back{
+        display: flex; list-style: none; align-items: center;
+        li{
+            font-size: 1.4em;
+            padding: 0px 8px;cursor: pointer;
+        }
+        .container-text{
+            margin-top: -6px; padding: 0px 8px;
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+}
