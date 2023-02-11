@@ -1,0 +1,11 @@
+.container-next-prev{
+    font-size: 2.5em; 
+    .left{
+        position: absolute; left: 5px; top: 50%;
+        transform: translateY(-50%);cursor: pointer;
+    }
+    .right{
+        position: absolute; left: 95%; top: 50%;
+        transform: translateY(-50%);cursor: pointer;
+    }
+}

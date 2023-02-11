@@ -1,0 +1,27 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
+.header-container{
+    display: flex; justify-content: space-between; margin-top: -50px;
+    margin-bottom: 50px;
+    height: 45px;width: fit-content; margin-left: auto; margin-right: auto;
+    .stepper-icons-container{
+      position: relative;
+      &:not(:last-child){
+        width: 170px;
+        &::after{
+          content: "";
+          position: absolute; left: 30px; top: 45%;transform: translateY(-50%);
+          width: 135px; height: 3px; background-color: rgb(121, 121, 121);
+        }  
+      }
+      margin-top: auto; margin-bottom: auto;
+      p{
+        font-size: 1.5em; color:  rgb(121, 121, 121);
+      }
+      .text{
+        position: absolute;left: -50px; width: 120px; text-align: center;
+        font-weight: bold; text-transform: capitalize;font-size: .8em;
+        top: 30px;
+      }
+    }
+  }

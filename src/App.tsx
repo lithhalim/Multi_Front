@@ -1,10 +1,14 @@
 import React from 'react'
-import MainContainerCheckbox from './checkboxTree/MainContainerCheckbox'
-
+import Stepper from './stepper_Section/Stepper_Section';
+import {BrowserRouter,Route,Routes} from "react-router-dom"
 function App() {
   return (
     <div>
-      <MainContainerCheckbox/>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Stepper/>} path='/stepper'/>
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }
